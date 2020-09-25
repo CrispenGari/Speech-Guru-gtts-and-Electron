@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/c8de22c177.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Speech Guru</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__header">
+        <select id="language"></select>
+        <button id="close">CLOSE</button>
+      </div>
+      <div class="container__main">
+        <div class="container__left">
+          <textarea
+            placeholder="Type your speech... "
+            id="main-text"
+            cols="71"
+            rows="10"
+          ></textarea>
+          <div class="container__leftControls">
+            <div>
+              <div class="play__control">
+                <i class="fas fa-play-circle" id="play" title="play random"></i>
+              </div>
+              <div class="mute__control">
+                <i
+                  class="fas fa-microphone"
+                  title="record speech"
+                  id="record"
+                ></i>
+              </div>
+            </div>
+
+            <img
+              id="player_waves"
+              src="https://media1.tenor.com/images/6f5ff36fd8ffefa40bf466df6c693ef1/tenor.gif?itemid=15524627"
+              alt=""
+            />
+            <div class="text__controls">
+              <i class="fas fa-backspace" id="backspace" title="backspace"></i>
+              <i class="fas fa-trash-alt" id="clear" title="clear speech"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="audiop">
+        <source type="audio/mp3" id="audio_source" />
+      </audio>
+      <marquee loop id="marquee">
+        <span id="music_name">Nothing is currently playing </span>
+      </marquee>
+    </div>
+
+    <script>
+      require("../public/scripts/index.js");
+    </script>
+  </body>
+</html>

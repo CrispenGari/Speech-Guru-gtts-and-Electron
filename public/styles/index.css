@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  /* background: #183153; */
+  background-image: url("https://media1.tenor.com/images/0f216568c6f10ba607cad3c05ad47fed/tenor.gif?itemid=5490146");
+}
+.container {
+}
+#player_waves {
+  height: 30px;
+  margin-right: 40%;
+}
+#close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: none;
+  color: white;
+  background-color: green;
+  padding: 5px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+#close:hover {
+  opacity: 0.8;
+}
+#close:active {
+  background-color: blue;
+}
+.container__header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  justify-content: space-around;
+}
+.container__header > select {
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 2px;
+  outline: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#marquee {
+  z-index: 209;
+  width: 50%;
+  margin: auto;
+  align-self: center;
+}
+.last_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#audiop {
+  display: none !important;
+}
+#option {
+  cursor: pointer;
+  padding: 3px;
+}
+.text__controls {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#option:hover {
+  /* background: #183153; */
+
+  color: white;
+}
+.container__main {
+  display: flex;
+  justify-content: space-between;
+}
+.container__left {
+  flex: 1;
+  padding: 10px;
+}
+.container__left > textarea {
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  caret-color: blue;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 20px !important;
+  font-weight: 500;
+  text-shadow: 1px 1px 0px 1px green;
+  outline: none;
+}
+.container__leftControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.fas {
+  font-size: 30px;
+  color: green;
+  cursor: pointer;
+  transition: transform 100ms ease-out;
+  margin-right: 20px;
+}
+.fas:hover {
+  transform: scale(1.02);
+  opacity: 0.85;
+}
+.container__leftControls > div:first-child {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  width: 100%;
+}
+.container__leftControls > div:first-child > .fas {
+  margin-top: 10px;
+}
